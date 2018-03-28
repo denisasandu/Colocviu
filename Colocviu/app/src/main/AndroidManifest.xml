@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SecondaryActivity">
+            <intent-filter>
+                <action android:name="ro.pub.cs.systems.eim.colocviu.colocviu.SecondaryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="ro.pub.cs.systems.eim.colocviu.colocviu.MyService"
+            android:enabled="true"
+            android:exported="false"></service>
     </application>
 
 </manifest>
